@@ -301,11 +301,12 @@ details > summary {
 }
 
 .products__button {
-  display: inline-flex;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  position: relative;
+  // display: inline-flex;
+  // justify-content: center;
+  // -webkit-box-align: center;
+  // -ms-flex-align: center;
+  // align-items: center;
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -320,6 +321,11 @@ details > summary {
 }
 
 .products__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
   fill: var(--accent-color);
 }
 // details[open] summary {
