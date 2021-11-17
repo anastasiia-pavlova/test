@@ -303,14 +303,18 @@ details > summary {
 .products__button {
   display: inline-flex;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 40px;
   width: 40px;
   border-radius: 50%;
   background-color: var(--primary-btn-bg);
   cursor: pointer;
-  transition: transform var(--animation-timer) var(--animation-cube), background-color  var(--animation-timer) var(--animation-cube);
-  &:hover, &:focus{
+  transition: transform var(--animation-timer) var(--animation-cube),
+    background-color var(--animation-timer) var(--animation-cube);
+  &:hover,
+  &:focus {
     background-color: var(--hover-btn-bg-lite);
   }
 }
