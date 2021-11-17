@@ -1643,15 +1643,7 @@ details > summary {
 }
 
 .products__button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -1668,6 +1660,12 @@ details > summary {
 }
 
 .products__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: inline-block;
   fill: var(--accent-color);
 }
 
